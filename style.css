@@ -1,12 +1,11 @@
 
 @charset "UTF-8";
-/* Define variables */
 :root {
   --main-font-size: x-large;
 	--timeline-block-height: 4rem;
 	--timeline-padding-left: 2rem;
 	--timeline-divider-border: 4px;
-	--timeline-circle-size: 2rem;
+	--timeline-dot-diameter: 2rem;
 	--timeline-gap-top: 1rem;
 }
 
@@ -45,12 +44,12 @@
 .entry__body::before {
 	content: "";
 	position: absolute;
-	width: var(--timeline-circle-size);
+	width: var(--timeline-dot-diameter);
 	aspect-ratio: 1/1;
 	border-radius: 50%;
 	z-index: 10;
 	background-color: green;
-	left: calc(var(--timeline-circle-size) / -2 - var(--timeline-divider-border) / 2);
+	left: calc(var(--timeline-dot-diameter) / -2 - var(--timeline-divider-border) / 2);
 }
 
 
